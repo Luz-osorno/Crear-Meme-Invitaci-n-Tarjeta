@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de Memes/Invitaciones/Tarjetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="contenedor-principal">
+        <div id="opciones-configuracion">
+            <h1>Meme/Invitación/Tarjeta</h1>
+            
+            <div class="grupo-configuracion" id="categoria-seleccion">
+                <label for="seleccionar-categoria">Selecciona una categoría:</label>
+                <select id="seleccionar-categoria">
+                    <option value="meme">Meme</option>
+                    <option value="invitacion">Invitación</option>
+                    <option value="tarjeta">Tarjeta</option>
+                </select>
+            </div>
+
+            <div class="grupo-configuracion" id="tamano-letra-seleccion">
+                <label for="seleccionar-tamano">Tamaño de letra:</label>
+                <select id="seleccionar-tamano">
+                    <option value="16px">16px</option>
+                    <option value="20px">20px</option>
+                    <option value="24px">24px</option>
+                </select>
+            </div>
+
+            <!-- Selección de color de letra -->
+            <div class="grupo-configuracion" id="color-letra-seleccion">
+                <label for="seleccionar-color">Color de letra:</label>
+                <select id="seleccionar-color">
+                    <option value="#000000">Negro</option>
+                    <option value="#ff0000">Rojo</option>
+                    <option value="#0000ff">Azul</option>
+                    <option value="#00ff00">Verde</option>
+                    <option value="#ff00ff">Rosa</option>
+                </select>
+            </div>
+
+            <!-- Opciones de imagen -->
+            <div id="opciones-imagenes" class="grupo-configuracion">
+                <img src="media/meme.jpeg"  class="imagen-opcion" />
+                <img src="media/meme1.jpeg"  class="imagen-opcion" />
+                <img src="media/tarjeta.png"  class="imagen-opcion" />
+                <img src="media/tarjeta1.png" class="imagen-opcion" />
+                <img src="media/Invitacion.png" class="imagen-opcion" />
+                <img src="media/invitacion1.png" class="imagen-opcion" />
+            </div>
+
+            <div class="grupo-configuracion" id="nombre-creador">
+                <label for="entrada-nombre">Nombre:</label>
+                <input type="text" id="entrada-nombre" >
+            </div>
+
+            <div class="grupo-configuracion" id="mensaje-entrada">
+                <label for="entrada-mensaje">Mensaje:</label>
+                <textarea id="entrada-mensaje" ></textarea>
+            </div>
+
+            <button id="boton-generar">Generar</button>
+        </div>
+
+        <div id="area-resultado"></div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
